@@ -116,6 +116,7 @@ header {
 
 
 header video {
+    object-fit: cover;
     width: 100%;
     top: 0;
     left: 0;
@@ -179,7 +180,60 @@ header button {
     padding: 0 20px;
     transition: 0.5s;
     cursor: pointer;
+    transform: rotate(-10deg);
 
+}
+
+.neon {
+    z-index: 1;
+    font-weight: 800;
+    animation: neon 2s linear infinite;
+    transform: rotate(-10deg);
+    letter-spacing: 1px;
+}
+
+
+
+@keyframes neon {
+    0% {
+        color: transparent;
+    }
+
+    10% {
+        color: transparent;
+    }
+
+    11% {
+        color: rgba(245, 245, 245, .5);
+    }
+
+    20% {
+        color: rgba(245, 245, 245, .5);
+    }
+
+    31% {
+        color: transparent;
+    }
+
+    34% {
+        color: transparent;
+    }
+
+    35% {
+        color: whitesmoke;
+    }
+
+    90% {
+        color: whitesmoke;
+    }
+
+    91% {
+        color: transparent;
+    }
+
+    100% {
+        color: transparent;
+    }
 }
 
 
@@ -215,6 +269,7 @@ header button:hover {
 @media (orientation: landscape) and (min-width: 533px) {
 
     header video {
+        object-fit: cover;
         height: 100%;
         width: auto;
     }
@@ -295,6 +350,7 @@ header button:hover {
     }
 
     header video {
+        object-fit: cover;
         height: 100%;
         width: auto;
     }

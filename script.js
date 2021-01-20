@@ -42,11 +42,26 @@ $(document).on("scroll", function () {
   const webfiveFromTop = $webfive.offset().top;
   const webfiveHeight = $webfive.outerHeight();
 
+  const $aboutsix = $(".about.six");
+  const aboutsixFromTop = $aboutsix.offset().top;
+  const aboutsixHeight = $aboutsix.outerHeight();
+
+  const $websix = $(".web.six");
+  const websixFromTop = $websix.offset().top;
+  const websixHeight = $websix.outerHeight();
+
   if (scrollValue > aboutfiveFromTop + webfiveHeight - windowHeight) {
     $aboutfive.addClass("active");
   }
   if (scrollValue > webfiveFromTop + webfiveHeight - windowHeight) {
     $webfive.addClass("active");
+  }
+
+  if (scrollValue > aboutsixFromTop + websixHeight - windowHeight) {
+    $aboutsix.addClass("active");
+  }
+  if (scrollValue > websixFromTop + websixHeight - windowHeight) {
+    $websix.addClass("active");
   }
 
   if (scrollValue > weblFromTop + weblHeight - windowHeight) {

@@ -320,17 +320,20 @@ header button:hover {
         z-index: 500;
         cursor: pointer;
         padding: 3px 7px;
-        margin-top: -9vh;
+        margin-top: -12vh;
         text-align: center;
+        width: 100vw;
     }
 
+
     .moreProject p {
-        font-size: 20px;
+        margin-top: 4vh;
+        font-size: 30px;
     }
 
 
     .fa-arrow-circle-down {
-        margin-top: 6vh;
+        margin-top: 9vh;
         animation: move 2s linear infinite;
     }
 
@@ -347,6 +350,7 @@ header button:hover {
 
     i.less {
         display: none;
+
     }
 
     header video {
@@ -354,6 +358,8 @@ header button:hover {
         height: 100%;
         width: auto;
     }
+
+
 }
 
 @media (orientation: portrait) and (min-width: 360px) {
@@ -372,6 +378,8 @@ header button:hover {
     header h2 {
         font-size: 28px
     }
+
+
 }
 
 @media (orientation: portrait) and (min-width: 375px) {
@@ -809,6 +817,7 @@ section {
     border: 2px solid grey;
 }
 
+
 .portfolio .project .about,
 .portfolio .web {
     transform: translateX(-100vw);
@@ -821,11 +830,13 @@ section {
 .portfolio .about.l.active,
 .portfolio .about.ll.active,
 .portfolio .about.five.active,
+.portfolio .about.six.active,
 .portfolio .web.l.active,
 .portfolio .web.ll.active,
 .portfolio .web.p.active,
 .portfolio .web.pp.active,
-.portfolio .web.five.active {
+.portfolio .web.five.active,
+.portfolio .web.six.active {
     transform: translateX(0);
 }
 
@@ -888,7 +899,8 @@ section {
     .portfolio .project .about.pp,
     .portfolio .web.p,
     .portfolio .web.pp,
-    .portfolio .about.five {
+    .portfolio .about.five,
+    .portfolio .web.six {
         transform: translateX(100vw);
         transition: .8s;
     }
@@ -897,7 +909,8 @@ section {
     .portfolio .project .about.ll,
     .portfolio .web.l,
     .portfolio .web.ll,
-    .portfolio .web.five {
+    .portfolio .web.five,
+    .portfolio .about.six {
         transform: translateX(-100vw);
         transition: .8s;
     }
@@ -907,11 +920,13 @@ section {
     .portfolio .about.l.active,
     .portfolio .about.ll.active,
     .portfolio .about.five.active,
+    .portfolio .about.six.active,
     .portfolio .web.l.active,
     .portfolio .web.ll.active,
     .portfolio .web.p.active,
     .portfolio .web.pp.active,
-    .portfolio .web.five.active {
+    .portfolio .web.five.active,
+    .portfolio .web.six.active {
         transform: translateX(0);
     }
 

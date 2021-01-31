@@ -50,6 +50,14 @@ $(document).on("scroll", function () {
   const websixFromTop = $websix.offset().top;
   const websixHeight = $websix.outerHeight();
 
+  const $aboutseven = $(".about.seven");
+  const aboutsevenFromTop = $aboutseven.offset().top;
+  const aboutsevenHeight = $aboutseven.outerHeight();
+
+  const $webseven = $(".web.seven");
+  const websevenFromTop = $webseven.offset().top;
+  const websevenHeight = $webseven.outerHeight();
+
   if (scrollValue > aboutfiveFromTop + webfiveHeight - windowHeight) {
     $aboutfive.addClass("active");
   }
@@ -62,6 +70,13 @@ $(document).on("scroll", function () {
   }
   if (scrollValue > websixFromTop + websixHeight - windowHeight) {
     $websix.addClass("active");
+  }
+
+  if (scrollValue > aboutsevenFromTop + websevenHeight - windowHeight) {
+    $aboutseven.addClass("active");
+  }
+  if (scrollValue > websevenFromTop + websevenHeight - windowHeight) {
+    $webseven.addClass("active");
   }
 
   if (scrollValue > weblFromTop + weblHeight - windowHeight) {

@@ -329,12 +329,15 @@ header button:hover {
     .moreProject p {
         margin-top: 4vh;
         font-size: 30px;
+        font-style: italic;
     }
 
 
     .fa-arrow-circle-down {
-        margin-top: 9vh;
-        animation: move 2s linear infinite;
+        margin-top: 15vh;
+        animation: move 1s linear infinite alternate;
+        box-shadow: 0rem 0rem 1.4rem .1rem rgba(255, 254, 254, 0.6);
+        border-radius: 50%;
     }
 
 
@@ -831,12 +834,14 @@ section {
 .portfolio .about.ll.active,
 .portfolio .about.five.active,
 .portfolio .about.six.active,
+.portfolio .about.seven.active,
 .portfolio .web.l.active,
 .portfolio .web.ll.active,
 .portfolio .web.p.active,
 .portfolio .web.pp.active,
 .portfolio .web.five.active,
-.portfolio .web.six.active {
+.portfolio .web.six.active,
+.portfolio .web.seven.active {
     transform: translateX(0);
 }
 
@@ -900,7 +905,8 @@ section {
     .portfolio .web.p,
     .portfolio .web.pp,
     .portfolio .about.five,
-    .portfolio .web.six {
+    .portfolio .web.six,
+    .portfolio .about.seven {
         transform: translateX(100vw);
         transition: .8s;
     }
@@ -910,7 +916,8 @@ section {
     .portfolio .web.l,
     .portfolio .web.ll,
     .portfolio .web.five,
-    .portfolio .about.six {
+    .portfolio .about.six,
+    .portfolio .web.seven {
         transform: translateX(-100vw);
         transition: .8s;
     }
@@ -921,12 +928,14 @@ section {
     .portfolio .about.ll.active,
     .portfolio .about.five.active,
     .portfolio .about.six.active,
+    .portfolio .about.seven.active,
     .portfolio .web.l.active,
     .portfolio .web.ll.active,
     .portfolio .web.p.active,
     .portfolio .web.pp.active,
     .portfolio .web.five.active,
-    .portfolio .web.six.active {
+    .portfolio .web.six.active,
+    .portfolio .web.seven.active {
         transform: translateX(0);
     }
 

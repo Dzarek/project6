@@ -1,6 +1,13 @@
 $(document).on("scroll", function () {
   const windowHeight = $(window).height();
   const scrollValue = $(this).scrollTop();
+  const $running = $(".running");
+  const $runningTwo = $(".runningTwo");
+  const $runningThree = $(".runningThree");
+  const $runningFour = $(".runningFour");
+  const $runningFive = $(".runningFive");
+  const $runningSix = $(".runningSix");
+  const $runningSeven = $(".runningSeven");
 
   const $webl = $(".web.l");
   const weblFromTop = $webl.offset().top;
@@ -63,6 +70,7 @@ $(document).on("scroll", function () {
   }
   if (scrollValue > webfiveFromTop + webfiveHeight - windowHeight) {
     $webfive.addClass("active");
+    $runningFour.addClass("goMan2");
   }
 
   if (scrollValue > aboutsixFromTop + websixHeight - windowHeight) {
@@ -70,6 +78,7 @@ $(document).on("scroll", function () {
   }
   if (scrollValue > websixFromTop + websixHeight - windowHeight) {
     $websix.addClass("active");
+    $runningFive.addClass("goMan");
   }
 
   if (scrollValue > aboutsevenFromTop + websevenHeight - windowHeight) {
@@ -77,6 +86,8 @@ $(document).on("scroll", function () {
   }
   if (scrollValue > websevenFromTop + websevenHeight - windowHeight) {
     $webseven.addClass("active");
+    $runningSix.addClass("goMan2");
+    $runningSeven.addClass("goMan3");
   }
 
   if (scrollValue > weblFromTop + weblHeight - windowHeight) {
@@ -84,12 +95,15 @@ $(document).on("scroll", function () {
   }
   if (scrollValue > webllFromTop + webllHeight - windowHeight) {
     $webll.addClass("active");
+    $runningTwo.addClass("goMan2");
   }
   if (scrollValue > webpFromTop + webpHeight - windowHeight) {
     $webp.addClass("active");
+    $running.addClass("goMan");
   }
   if (scrollValue > webppFromTop + webppHeight - windowHeight) {
     $webpp.addClass("active");
+    $runningThree.addClass("goMan");
   }
   if (scrollValue > aboutpFromTop + weblHeight - windowHeight) {
     $aboutp.addClass("active");
@@ -106,6 +120,8 @@ $(document).on("scroll", function () {
 
   if (scrollValue < 100) {
     $("div").removeClass("active");
+    $("div").removeClass("goMan");
+    $("div").removeClass("goMan2");
   }
 });
 

@@ -14,6 +14,19 @@ body {
     display: none;
 }
 
+.running,
+.runningTwo,
+.runningThree,
+.runningFour,
+.runningFive,
+.runningSix {
+    display: none;
+}
+
+
+
+
+
 .status {
     height: 1vh;
     width: 0%;
@@ -302,6 +315,8 @@ header button:hover {
 
 @media (orientation: portrait) and (min-width: 320px) {
 
+
+
     .more {
         transition: 1s;
     }
@@ -477,6 +492,63 @@ header button:hover {
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
+
+    .running,
+    .runningTwo,
+    .runningThree,
+    .runningFour,
+    .runningFive,
+    .runningSix,
+    .runningSeven {
+        position: sticky;
+        z-index: 100;
+        height: 100px;
+        display: none;
+        margin: -80px 0 0 0;
+        transform: translateX(-10vw);
+    }
+
+    .goMan {
+        display: block;
+        animation: runningMan 1 3s linear forwards;
+    }
+
+    .goMan2 {
+        display: block;
+        animation: runningMan 1 3s linear reverse;
+    }
+
+    .goMan3 {
+        display: block;
+        animation: runningMan2 1 3s linear;
+
+    }
+
+
+
+    @keyframes runningMan {
+        0% {
+            transform: translateX(-10vw);
+        }
+
+        100% {
+            transform: translateX(100vw);
+        }
+    }
+
+    @keyframes runningMan2 {
+        0% {
+            transform: translateX(-10vw);
+        }
+
+        100% {
+            transform: translateX(40vw);
+
+        }
+    }
+
+
+
     nav {
         position: fixed;
         display: block;

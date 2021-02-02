@@ -75,6 +75,7 @@
                         href="https://dzarek.github.io/wisielecGame/">PLAY <i class="far fa-play-circle"></i></a></p>
             </div>
         </div>
+        <img class="running" src="images/run1.gif" alt="run">
         <div class="project clearfix">
             <div class="web p">
                 <img src="images/2a.jpg" alt="projekt 2">
@@ -87,6 +88,7 @@
                 </p>
             </div>
         </div>
+        <img class="runningTwo" src="images/run2.gif" alt="run">
         <div class="project clearfix">
             <div class="web ll">
                 <img src="images/3a.jpg" alt="projekt 3">
@@ -97,6 +99,7 @@
                         href="https://dzarek.github.io/memoryGame/">PLAY <i class="far fa-play-circle"></i></a></p>
             </div>
         </div>
+        <img class="runningThree" src="images/run1.gif" alt="run">
         <div class="project clearfix ">
             <div class="web pp">
                 <img src="images/4a.jpg" alt="projekt 4">
@@ -118,6 +121,7 @@
 
         </div>
         <div class="changedirection"></div>
+        <img class="runningFour" src="images/run2.gif" alt="run">
         <div class="project clearfix more less">
             <div class="web five">
                 <img src="images/5a.jpg" alt="projekt 5">
@@ -129,6 +133,7 @@
                 </p>
             </div>
         </div>
+        <img class="runningFive" src="images/run1.gif" alt="run">
         <div class="project clearfix more less">
             <div class="web six">
                 <img src="images/6a.jpg" alt="projekt 6">
@@ -142,6 +147,7 @@
                 </p>
             </div>
         </div>
+        <img class="runningSix" src="images/run2.gif" alt="run">
         <div class="project clearfix more less">
             <div class="web seven">
                 <img src="images/7a.png" alt="projekt 7">
@@ -153,6 +159,7 @@
                 </p>
             </div>
         </div>
+        <img class="runningSeven" src="images/run1.gif" alt="run">
     </section>
     <section class="slogan">
         <video src="images/Sea - 16108.mp4" autoplay muted loop playsinline nocontrols></video>
@@ -177,10 +184,10 @@
     <section class="contact">
         <h1>Skontaktuj się ze mną</h1>
         <div class="wrap clearfix">
-            <form>
-                <input type="text" placeholder="Twoje imię">
-                <input type="text" placeholder="E-mail">
-                <textarea placeholder="Twoja wiadomość"></textarea>
+            <form method="post" name="contactform" action="mail.php">
+                <input type="text" name="name" placeholder="Twoje imię" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea placeholder="Twoja wiadomość" name="message" required></textarea>
                 <button>Wyśli wiadomość</button>
             </form>
             <div class="socials">

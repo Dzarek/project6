@@ -5,8 +5,8 @@
   //Informację o emailu, na który będzie wysyłana wiadomość
   $admin_email = "jarekjanas95@gmail.com";
   $email = $_REQUEST['email'];
-  $subject = $_REQUEST['subject'];
-  $comment = $_REQUEST['comment'];
+  $subject = $_REQUEST['name'];
+  $comment = $_REQUEST['message'];
   
   //wysyłamy email
   mail($admin_email, "$subject", $comment, "From:" . $email);
@@ -18,3 +18,6 @@
   //jeżeli zmienna z wartością "email" nie została wypełniona pokazujemy ponownie formularz
   else  {
 ?>
+
+
+  

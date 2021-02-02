@@ -1,21 +1,20 @@
 <?php
-
-$to ="jarekjanas95@gmail.com";
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = "Wiadomość portfolio";
-$message = $_POST['message'];
-$headers = "From: $name\r\nCc: $to";
-$headers .= "Content-Type: text/html; charset=utf-8\r\n";
-
-
-
-?>
-
-<?php if(mail($to, $subject, $message, $headers)) {
-    echo("Zapytanie wysłane!");
-} else {
-    echo("błąd zapytania");
-}
-
+//jeżeli zmienna "email" została wypełniona, wysyłamy wiadomość
+  if (isset($_REQUEST['email']))  {
+  
+  //Informację o emailu, na który będzie wysyłana wiadomość
+  $admin_email = "jarekjanas95@gmail.com";
+  $email = $_REQUEST['email'];
+  $subject = $_REQUEST['subject'];
+  $comment = $_REQUEST['comment'];
+  
+  //wysyłamy email
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+  
+  //komunikat potwierdzający
+  echo "Dziękujemy za kontakt z nami!";
+  }
+  
+  //jeżeli zmienna z wartością "email" nie została wypełniona pokazujemy ponownie formularz
+  else  {
 ?>

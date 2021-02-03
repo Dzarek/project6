@@ -19,7 +19,8 @@ body {
 .runningThree,
 .runningFour,
 .runningFive,
-.runningSix {
+.runningSix,
+.runningSeven {
     display: none;
 }
 

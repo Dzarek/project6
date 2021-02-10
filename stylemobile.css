@@ -255,7 +255,12 @@ header button {
 header button:hover {
     background-color: whitesmoke;
     color: #111;
+}
 
+header button:hover .neon {
+    animation: none;
+    font-weight: normal;
+    letter-spacing: normal;
 }
 
 @media (orientation: landscape) {
@@ -522,7 +527,6 @@ header button:hover {
     .goMan3 {
         display: block;
         animation: runningMan2 1 3s linear;
-
     }
 
 
@@ -544,8 +548,8 @@ header button:hover {
 
         100% {
             transform: translateX(40vw);
-
         }
+
     }
 
 
@@ -844,8 +848,14 @@ section {
 }
 
 .portfolio {
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(images/wood-1759566_1920.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    background-position: center center;
     padding-bottom: 3%;
+    box-shadow: 0 0 25px 20px rgb(29, 29, 28);
+
 }
 
 
@@ -1047,6 +1057,7 @@ section {
     height: 100vh;
     overflow: hidden;
     max-width: 1920px;
+
 }
 
 .slogan>* {

@@ -314,7 +314,7 @@ a p {
 
     .play {
         position: fixed;
-        bottom: 50vh;
+        bottom: 40vh;
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
@@ -444,8 +444,9 @@ a p {
     }
 
     .play {
-position: fixed;
-        bottom: 3vh;
+        position: fixed;
+        bottom: 1vh;
+        margin: 0;
     }
 
 

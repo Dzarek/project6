@@ -152,14 +152,14 @@ $(".nav2").on("click", function () {
   );
   $(".fas, nav").toggleClass("off");
 });
-$(".tutaj").on("click", function () {
-  $("body, html").animate(
-    {
-      scrollTop: $(".portfolio").offset().top,
-    },
-    2000
-  );
-});
+// $(".tutaj").on("click", function () {
+//   $("body, html").animate(
+//     {
+//       scrollTop: $(".portfolio").offset().top,
+//     },
+//     2000
+//   );
+// });
 $(".nav3").on("click", function () {
   $("body, html").animate(
     {
@@ -207,3 +207,9 @@ const statusBar = () => {
 };
 
 window.addEventListener("scroll", statusBar);
+
+const tutaj = document.querySelector(".tutaj");
+
+tutaj.addEventListener("click", () => {
+  window.location = "projects.html";
+});

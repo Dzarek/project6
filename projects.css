@@ -313,8 +313,8 @@ a p {
     }
 
     .play {
-        position: absolute;
-        bottom: 43vh;
+        position: fixed;
+        bottom: 50vh;
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
@@ -444,6 +444,7 @@ a p {
     }
 
     .play {
+position: fixed;
         bottom: 3vh;
     }
 

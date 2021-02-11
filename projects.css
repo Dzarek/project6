@@ -287,7 +287,7 @@ a p {
     .textMediaQuery {
         display: block;
         font-size: 20px;
-        margin-top: 4vh;
+        margin-top: 10vh;
         text-align: center;
     }
 
@@ -313,8 +313,8 @@ a p {
     }
 
     .play {
-        position: fixed;
-        bottom: 40vh;
+        position: absolute;
+        bottom: 49%;
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
@@ -444,9 +444,7 @@ a p {
     }
 
     .play {
-        position: fixed;
-        bottom: 1vh;
-        margin: 0;
+        bottom: 3%;
     }
 
 

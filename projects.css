@@ -313,7 +313,7 @@ a p {
     }
 
     .play {
-        position: absolute;
+        position: fixed;
         bottom: 49%;
         left: 50%;
         transform: translateX(-50%);
@@ -389,7 +389,7 @@ a p {
     .textMediaQuery {
         display: block;
         font-size: 20px;
-        margin-top: -1vh;
+        margin-top: 1vh;
     }
 
     .wrapLeft {
@@ -444,6 +444,7 @@ a p {
     }
 
     .play {
+        position: fixed;
         bottom: 3%;
     }
 

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     /* background-color: rgb(12, 12, 12); */
     background-image: url(images/communication-4871207_1920.jpg);
@@ -27,12 +31,54 @@ h1 {
 
 }
 
+.ring {
+    text-align: center;
+
+}
+
+.ring button {
+    height: 6vh;
+    width: 15vw;
+    font-size: 22px;
+    letter-spacing: 2px;
+    background-color: rgba(46, 45, 45, 0.753);
+    color: rgba(255, 255, 255, 0.753);
+    border: 3px solid rgba(255, 255, 255, 0.753);
+    border-radius: 10px;
+    margin: 0 10px 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .3s;
+    animation: activeRing 2s linear infinite alternate;
+}
+
+@keyframes activeRing {
+    0% {
+        color: rgba(255, 255, 255, 0.753);
+    }
+
+    100% {
+        color: transparent;
+    }
+}
+
+.ring .changeColorBtn {
+    background-color: rgba(255, 255, 255, 0.753);
+    color: rgba(7, 7, 7, 0.753);
+    animation: none
+}
+
+.ring button:hover {
+    background-color: rgba(255, 255, 255, 0.753);
+    color: rgba(7, 7, 7, 0.753);
+    animation: none
+}
 
 
 .video {
-    height: 62vh;
+    height: 55vh;
     width: 57vw;
-    margin: 3vh auto;
+    margin: 0vh auto;
     background-image: url(images/eat-2661935_1920.jpg);
     opacity: 0.6;
     background-size: cover;
@@ -48,7 +94,7 @@ h1 {
 .textMediaQuery {
     text-align: center;
     width: 60vw;
-    margin: 2vh auto;
+    margin: 4vh auto;
     font-size: 36px;
     font-style: italic;
     color: rgba(255, 255, 255, 0.883);
@@ -78,9 +124,9 @@ h1 {
     align-content: center;
     justify-content: center;
     width: 10vw;
-    height: 90vh;
+    height: 80vh;
     position: absolute;
-    top: 1vh;
+    bottom: 1vh;
     left: 5vw;
 }
 
@@ -92,9 +138,9 @@ h1 {
     align-content: center;
     justify-content: center;
     width: 10vw;
-    height: 90vh;
+    height: 80vh;
     position: absolute;
-    top: 1vh;
+    bottom: 1vh;
     right: 5vw;
 }
 
@@ -137,9 +183,9 @@ a p {
 
 .play {
     position: absolute;
-    bottom: 3vh;
+    bottom: 50vh;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50%);
     cursor: pointer;
 
 }
@@ -225,6 +271,11 @@ a p {
     animation: moveWrap 2s linear infinite alternate-reverse;
 }
 
+.ninjaVsZombie {
+    background-image: url(images/11a.jpg);
+    animation: moveWrap 2s linear infinite alternate-reverse;
+}
+
 .kapitanRakieta {
     background-image: url(images/4a.jpg);
     animation: moveWrap 2s linear infinite alternate;
@@ -245,6 +296,33 @@ a p {
     animation: moveWrap 2s linear infinite alternate-reverse;
 }
 
+.dorotaSzydełkuje {
+    background-image: url(images/9a.jpg);
+    animation: moveWrap 2s linear infinite alternate;
+}
+
+.jjApartments {
+    background-image: url(images/10a.jpg);
+    animation: moveWrap 2s linear infinite alternate-reverse;
+}
+
+.buyList {
+    background-image: url(images/12a.jpg);
+    animation: moveWrap 2s linear infinite alternate;
+}
+
+.cocktails-chill {
+    background-image: url(images/13a.jpg);
+    animation: moveWrap 2s linear infinite alternate;
+}
+
+
+
+
+.none {
+    display: none;
+}
+
 @media(orientation: portrait) {
     h1 {
         font-size: 24px;
@@ -256,7 +334,9 @@ a p {
         height: 30vh;
         width: 90vw;
         margin: 4vh auto;
+        margin-top: 0;
         opacity: 0.6;
+
     }
 
 
@@ -287,7 +367,7 @@ a p {
     .textMediaQuery {
         display: block;
         font-size: 20px;
-        margin-top: 10vh;
+        margin-top: 2vh;
         text-align: center;
     }
 
@@ -314,7 +394,7 @@ a p {
 
     .play {
         position: fixed;
-        bottom: 49%;
+        bottom: 65%;
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
@@ -369,6 +449,75 @@ a p {
         background-image: none;
         animation: moveWrap 2s linear infinite alternate-reverse;
     }
+
+    .dorotaSzydełkuje {
+        background-image: none;
+        animation: moveWrap 2s linear infinite alternate;
+    }
+
+    .jjApartments {
+        background-image: none;
+        animation: moveWrap 2s linear infinite alternate-reverse;
+    }
+
+    .ninjaVsZombie {
+        background-image: none;
+    }
+
+    .ring button {
+        height: 6vh;
+        width: 28vw;
+        font-size: 12px;
+        letter-spacing: 1px;
+        border: 1px solid rgba(255, 255, 255, 0.753);
+        margin: 0px 1px 5px;
+        font-weight: 800;
+        border-radius: 10px;
+    }
+
+    /* .ring button {
+        z-index: 1000;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15vh;
+        height: 15vh;
+        border-radius: 50%;
+        transform-origin: left -30px;
+        animation: animate 8s linear infinite;
+        font-size: 8px;
+        color: white;
+        background-color: rgba(29, 27, 27, 0.459);
+        border: none;
+        box-shadow: 0 0 20px 5px white;
+        cursor: pointer;
+    }
+
+    .ring button:hover {
+        animation: activeRing 2s linear infinite alternate;
+    }
+
+
+    .ring .aplikacje {
+        animation-delay: 2s;
+
+    }
+
+    .ring .stronyWWW {
+        animation-delay: 4s;
+    } */
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
 }
 
 @media(orientation: landscape) and (max-width: 1000px) {
@@ -376,10 +525,23 @@ a p {
         font-size: 24px;
     }
 
+    .ring button {
+        height: 8vh;
+        width: 18vw;
+        font-size: 12px;
+        letter-spacing: 1px;
+        border: 1px solid rgba(255, 255, 255, 0.753);
+        margin: 0 2px 5px;
+        font-weight: 400;
+        border-radius: 10px;
+    }
+
+
     .video {
         height: 52vh;
         width: 62vw;
         margin: 3vh auto;
+        margin-top: 0;
     }
 
     .text {
@@ -445,14 +607,14 @@ a p {
 
     .play {
         position: fixed;
-        bottom: 3%;
+        bottom: 40%;
     }
 
 
     .fa-play-circle {
-        font-size: 50px;
-        height: 50px;
-        width: 50px;
+        font-size: 30px;
+        height: 30px;
+        width: 30px;
     }
 
     .fa-home {
@@ -499,6 +661,18 @@ a p {
     }
 
     .aplikacjaPogodowa {
+        background-image: none;
+    }
+
+    .ninjaVsZombie {
+        background-image: none;
+    }
+
+    .dorotaSzydełkuje {
+        background-image: none;
+    }
+
+    .jjApartments {
         background-image: none;
     }
 }

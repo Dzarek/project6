@@ -10,6 +10,11 @@ const kapitanRakieta = document.querySelector(".kapitanRakieta");
 const blackJack = document.querySelector(".blackJack");
 const serialoweQuizowanie = document.querySelector(".serialoweQuizowanie");
 const aplikacjaPogodowa = document.querySelector(".aplikacjaPogodowa");
+const ninjaVsZombie = document.querySelector(".ninjaVsZombie");
+const dorotaSzydełkuje = document.querySelector(".dorotaSzydełkuje");
+const jjApartments = document.querySelector(".jjApartments");
+const buyList = document.querySelector(".buyList");
+const cocktailsChill = document.querySelector(".cocktails-chill");
 
 wisielec.addEventListener("click", () => {
   // video.style.opacity = 0.8;
@@ -92,4 +97,93 @@ aplikacjaPogodowa.addEventListener("click", () => {
   play.addEventListener("click", () => {
     window.location = "https://dzarek.github.io/pogoda/";
   });
+});
+ninjaVsZombie.addEventListener("click", () => {
+  // video.style.opacity = 0.6;
+  video.style.backgroundImage = "url('images/11a.jpg')";
+  text.style.fontSize = "20px";
+  text.innerHTML = "Pozabijaj wszystkie zombiaki bo inaczej Cię zjedzą...";
+  play.addEventListener("click", () => {
+    window.location = "https://dzarek.github.io/ninjaGame/";
+  });
+});
+dorotaSzydełkuje.addEventListener("click", () => {
+  // video.style.opacity = 0.6;
+  video.style.backgroundImage = "url('images/9a.jpg')";
+  text.style.fontSize = "20px";
+  text.innerHTML =
+    "Strona internetowa stworzona dla osoby, która zajmuje się szydełkowaniem. Można tam zamówić produkty wykonane z włóczki takie jak: zabawki, pufy, koce itd.";
+  play.addEventListener("click", () => {
+    window.location = "https://dzarek.github.io/dorotaSzydelkuje/";
+  });
+});
+jjApartments.addEventListener("click", () => {
+  // video.style.opacity = 0.6;
+  video.style.backgroundImage = "url('images/10a.jpg')";
+  text.style.fontSize = "20px";
+  text.innerHTML =
+    "Strona internetowa hotelu/apartamentów do wynajęcia. Umożliwia sprawdzenie pokoi i ich filtrowanie, oraz zarezerwowanie pokoju.";
+  play.addEventListener("click", () => {
+    window.location = "https://jjapartments2.netlify.app/";
+  });
+});
+buyList.addEventListener("click", () => {
+  // video.style.opacity = 0.6;
+  video.style.backgroundImage = "url('images/12a.jpg')";
+  text.style.fontSize = "20px";
+  text.innerHTML = "Aplikacja do robienia listy zakupów.";
+  play.addEventListener("click", () => {
+    window.location = "https://buylist.netlify.app/";
+  });
+});
+cocktailsChill.addEventListener("click", () => {
+  // video.style.opacity = 0.6;
+  video.style.backgroundImage = "url('images/13a.jpg')";
+  text.style.fontSize = "20px";
+  text.innerHTML = "Aplikacja do przepisów koktaili.";
+  play.addEventListener("click", () => {
+    window.location = "https://cocktails-chill.netlify.app/";
+  });
+});
+
+const ring = document.querySelector(".ring");
+const gry = document.querySelector(".gry");
+const aplikacje = document.querySelector(".aplikacje");
+const stronyWWW = document.querySelector(".stronyWWW");
+
+const games = document.querySelector(".games");
+const app = document.querySelector(".app");
+const WWW = document.querySelector(".WWW");
+
+const ringBtn = document.querySelector(".ring button");
+
+gry.addEventListener("click", (event) => {
+  event.stopPropagation();
+  event.preventDefault();
+  games.classList.remove("none");
+  app.classList.add("none");
+  WWW.classList.add("none");
+  gry.classList.add("changeColorBtn");
+  stronyWWW.classList.remove("changeColorBtn");
+  aplikacje.classList.remove("changeColorBtn");
+});
+aplikacje.addEventListener("click", (event) => {
+  event.stopPropagation();
+  event.preventDefault();
+  app.classList.remove("none");
+  games.classList.add("none");
+  WWW.classList.add("none");
+  gry.classList.remove("changeColorBtn");
+  stronyWWW.classList.remove("changeColorBtn");
+  aplikacje.classList.add("changeColorBtn");
+});
+stronyWWW.addEventListener("click", (event) => {
+  event.stopPropagation();
+  event.preventDefault();
+  WWW.classList.remove("none");
+  app.classList.add("none");
+  games.classList.add("none");
+  gry.classList.remove("changeColorBtn");
+  stronyWWW.classList.add("changeColorBtn");
+  aplikacje.classList.remove("changeColorBtn");
 });
